@@ -1,11 +1,15 @@
 package task
 
-import "time"
+import (
+	"time"
+
+	"github.com/jinzhu/gorm"
+)
 
 // Task represents a single task
 type Task struct {
-	ID        string
+	gorm.Model
 	Title     string
 	Completed bool
-	DueDate   time.Time
+	DueDate   time.Time `gorm:"type:date"`
 }

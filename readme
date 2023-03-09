@@ -1,0 +1,11 @@
+create todo
+go run main.go -add="text herre"  -completionDate="2023-05-13"
+update todo
+go run main.go -update todoId (integer) 
+Delete todo
+go run main.go -delete todoId (integer) 
+see todo
+go run main.go -see todoId (integer) 
+
+see all todos
+go run main.go 
